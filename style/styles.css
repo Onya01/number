@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 1.0rem;
+}
+
+.container{
+    /* max-width: 1000px; */
+    margin: 0;
+    /* margin-top: 20px; */
+    font-family: 'Poppin', sans-serif;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+section{
+    border: 2px solid darkred;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    font-size: 5rem;
+    color: salmon;
+    position: relative;
+}
+
+.wrt h4{
+    margin: 0;
+    position: relative;
+    margin-top: -3rem;
+    text-align: center;
+    color: blue;
+    /* font-size: 1.2rem; */
+    z-index: 1;
+}
+
+.wrt .word{
+    color: black;
+}
+
+.wrt .word1{
+    color: rgb(4, 4, 102);
+}
+
+section h4 .wordx{
+    /* font-size: 1.2rem; */
+    font-weight: 700;
+}
+
+.content1{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+section .word-11{
+    margin-top: -1rem;
+    text-align: center;
+}
+
+section .word-up{
+    margin-top: -4.2rem;
+    z-index: 1;
+    position: relative;
+    color: black;
+    /* font-size: 1.2rem; */
+}
+
+section .word_up{
+    margin-top: -4.2rem;
+    z-index: 1;
+    position: relative;
+    color: rgb(25, 25, 101);
+    /* font-size: 1.2rem; */
+}
+
+.squaret{
+    background-image: url('/Images/people.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.squared{
+    background-image: url('/Images/house.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2rem;
+    /* margin-bottom: 0; */
+}
+section .word-26{
+    margin-top: -2rem;
+    position: relative;
+    
+}
+
+/* section .word-30{
+    margin-top: -1.3rem;
+    position: relative;
+} */
+section .word-30{
+    margin-top: -1.4rem;
+    position: relative;
+    /* font-size: 1.2rem; */
+    color: brown;
+}
+
+@media screen and (max-width: 950px) {
+    .content{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .content1{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
