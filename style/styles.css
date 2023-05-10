@@ -5,6 +5,8 @@ body{
     font-weight: 700;
     font-size: 1.0rem;
 }
+
+/* Dice general style */
   
 .dice-content{
     margin: 0;
@@ -15,39 +17,44 @@ body{
 }
 
 .dice-body{
-    width: 100%;
+    float: right;
     height: 20vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #b33951;
+    justify-content: center;
+    margin-bottom: 50px;
+    z-index: 99;
+    /* background: brown; */
+    border-radius: 10px;
+    width: 140px;
+    /* background: #b33951; */
 }
 
+/* dice style */
 .dice{
     position: relative;
-    width: 90px;
-    height: 90px;
-    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
     transform-style: preserve-3d;
     transition: 1s ease;
+    box-shadow: #ffffff;
 }
 
 /* Nice we'll need it */
 @keyframes rolling{
     50% {
-        transform: rotateX(455deg) ;
+        transform: rotateX(455deg) rotateY(455deg);
     }
 }
 
 .container_1{
-    display: grid;
-    grid-template-columns: 1fr;
     place-items: center;
     width: 100px;
     padding: 10px 10px ;
     border-radius: 30px;
-    margin-left: 15px;
-    /* background: #eeeeee; */
+    background: #eeeeee;
+    box-shadow: 0 0 20 rgba(0, 0, 0, .1);
 }
 
 .face{
@@ -67,7 +74,7 @@ body{
     height: 100%;
     border-radius: 20px;
     background: #f6f3f0;
-    /* transform: translateZ(-1px); */
+    transform: translateZ(-1px);
 }
 
 .face::after{
@@ -102,6 +109,10 @@ body{
 
 .left{
     transform: rotateY(-90deg) translateZ(50px);
+}
+
+.dice{
+    transform: rotateX(180deg) rotateY(0deg);
 }
 
 .front::after{
@@ -147,22 +158,22 @@ body{
 }
 
 /* Roll Button styles */
-.roll{
+/* .roll{
     cursor: pointer;
     color: #b33951;
-    margin-top: -80px;
     margin-right: 10px;
     padding: 6px 12px;
     border-radius: 5px;
     font: 700 16px 'Poppins';
     border: 2px solid #b33951;
     transition: .4s;
+    position: absolute;
 }
 
 .roll:hover{
     color: #fff;
-    background: black;
-}
+    background: #b33951;
+} */
 
 /* dice section ends here */
 

@@ -1,6 +1,6 @@
- dice = document.querySelector('.dice');
+ let dice = document.querySelector('.dice');
 
- rollBtn = document.querySelector('.roll');
+//  let rollBtn = document.querySelector('.roll');
 
 function randomDice () {
 
@@ -29,7 +29,7 @@ function rollDice(random) {
 
             case 2:
                 dice.style.transform = 'rotateX(-90deg) rotateY(0deg)';
-                                               break;
+                    break;
                     
                                        case 5:
                 dice.style.transform = 'rotateX(90deg) rotateY(0deg)';
@@ -53,4 +53,4 @@ function rollDice(random) {
    
 }
 
- rollBtn.addEventListener('click', randomDice);
+ dice.addEventListener('click', randomDice);
