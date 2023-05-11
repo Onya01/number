@@ -1,8 +1,8 @@
- let dice = document.querySelector('.dice');
+ const dice = document.querySelector('.dice');
 
 //  let rollBtn = document.querySelector('.roll');
 
-function randomDice () {
+const randomDice = () => {
 
     const random = Math.floor(Math.random() * 10);
 
@@ -14,7 +14,7 @@ function randomDice () {
     }
 }
 
-function rollDice(random) {
+const rollDice = (random) => {
     dice.style.animation = 'rolling 4s';
 
     setTimeout(() => {
